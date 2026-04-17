@@ -1,0 +1,181 @@
+/**
+ * Navigation
+ * Auto-generated from style.css refactoring
+ */
+
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: rgba(255, 255, 255, 0.72);
+	backdrop-filter: saturate(180%) blur(20px);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+	z-index: 1000;
+	transition: var(--transition);
+}
+
+body.dark-mode .navbar {
+	background: rgba(29, 29, 31, 0.72);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.75rem 2rem;
+}
+
+.nav-brand a {
+	font-size: 1.375rem;
+	font-weight: 600;
+	color: var(--text-primary);
+	text-decoration: none;
+	letter-spacing: -0.02em;
+}
+
+.nav-menu {
+	display: flex;
+	list-style: none;
+	gap: 2rem;
+	align-items: center;
+}
+
+.nav-link {
+	color: var(--text-primary);
+	text-decoration: none;
+	font-weight: 400;
+	font-size: 0.875rem;
+	transition: var(--transition);
+	position: relative;
+	opacity: 0.88;
+}
+
+.nav-link::after {
+	content: "";
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 0;
+	height: 1px;
+	background: var(--text-primary);
+	transition: var(--transition);
+}
+
+.nav-link:hover {
+	opacity: 1;
+}
+
+.nav-link:hover::after {
+	width: 100%;
+}
+
+.nav-toggle {
+	display: none;
+	flex-direction: column;
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 0.5rem;
+	position: relative;
+	width: 40px;
+	height: 40px;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-toggle span {
+	width: 25px;
+	height: 3px;
+	background: var(--text-primary);
+	margin: 3px 0;
+	transition: var(--transition);
+	border-radius: 3px;
+	position: absolute;
+}
+
+.nav-toggle span:nth-child(1) {
+	top: 10px;
+}
+
+.nav-toggle span:nth-child(2) {
+	top: 18px;
+}
+
+.nav-toggle span:nth-child(3) {
+	top: 26px;
+}
+
+/* Transform hamburger to X when menu is active */
+.nav-toggle.active span:nth-child(1) {
+	top: 18px;
+	transform: rotate(45deg);
+}
+
+.nav-toggle.active span:nth-child(2) {
+	opacity: 0;
+}
+
+.nav-toggle.active span:nth-child(3) {
+	top: 18px;
+	transform: rotate(-45deg);
+}
+
+/* Close button for mobile menu */
+.nav-close {
+	display: none;
+	position: absolute;
+	top: 1.5rem;
+	right: 2rem;
+	background: none;
+	border: none;
+	font-size: 2rem;
+	color: var(--text-primary);
+	cursor: pointer;
+	transition: var(--transition);
+	width: 45px;
+	height: 45px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	z-index: 1000;
+}
+
+.nav-close:hover {
+	background: rgba(0, 0, 0, 0.08);
+	transform: rotate(90deg);
+}
+
+body.dark-mode .nav-close:hover {
+	background: rgba(255, 255, 255, 0.1);
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+	background: rgba(0, 0, 0, 0.04);
+	border: none;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: var(--transition);
+	color: var(--text-primary);
+	font-size: 0.875rem;
+}
+
+.dark-mode-toggle:hover {
+	background: rgba(0, 0, 0, 0.08);
+	transform: translateY(-2px);
+}
+
+body.dark-mode .dark-mode-toggle {
+	background: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .dark-mode-toggle:hover {
+	background: rgba(255, 255, 255, 0.15);
+}

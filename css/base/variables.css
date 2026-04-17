@@ -1,0 +1,54 @@
+/**
+ * CSS Custom Properties (Variables)
+ * Design tokens for colors, spacing, shadows, and transitions
+ */
+
+:root {
+	/* Brand Colors */
+	--primary-color: #0071e3;
+	--secondary-color: #147ce5;
+	
+	/* Text Colors */
+	--text-primary: #1d1d1f;
+	--text-secondary: #86868b;
+	
+	/* Background Colors */
+	--bg-primary: #ffffff;
+	--bg-secondary: #f5f5f7;
+	--bg-dark: #1d1d1f;
+	
+	/* Border & Shadows */
+	--border-color: #d2d2d7;
+	--border-subtle: rgba(0, 0, 0, 0.06);
+	--shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+	--shadow-md: 0 4px 20px rgba(0, 0, 0, 0.1);
+	--shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.12);
+	--shadow-card: 0 2px 16px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.04);
+	
+	/* Transitions */
+	--transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Dark Mode Theme Variables */
+body.dark-mode {
+	/* Brand Colors */
+	--primary-color: #2997ff;
+	--secondary-color: #409cff;
+	
+	/* Text Colors */
+	--text-primary: #f5f5f7;
+	--text-secondary: #a1a1a6;
+	
+	/* Background Colors */
+	--bg-primary: #000000;
+	--bg-secondary: #1d1d1f;
+	--bg-dark: #000000;
+	
+	/* Border & Shadows */
+	--border-color: #424245;
+	--border-subtle: rgba(255, 255, 255, 0.08);
+	--shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+	--shadow-md: 0 4px 20px rgba(0, 0, 0, 0.5);
+	--shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.6);
+	--shadow-card: 0 2px 16px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.06);
+}

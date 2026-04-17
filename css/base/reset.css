@@ -1,0 +1,30 @@
+/**
+ * CSS Reset & Base Element Styles
+ * Normalize browser defaults and set consistent base styles
+ */
+
+/* Universal Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* HTML Base */
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	scroll-behavior: smooth;
+}
+
+/* Body Base */
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.47059;
+	color: var(--text-primary);
+	background-color: var(--bg-primary);
+	font-weight: 400;
+	letter-spacing: -0.022em;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+}

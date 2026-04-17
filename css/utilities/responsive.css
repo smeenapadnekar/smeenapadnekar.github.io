@@ -1,0 +1,574 @@
+/**
+ * Responsive
+ * Auto-generated from style.css refactoring
+ */
+
+@media (max-width: 968px) {
+	.nav-menu {
+		position: fixed;
+		left: -100%;
+		top: 0;
+		flex-direction: column;
+		background: rgba(255, 255, 255, 0.98);
+		backdrop-filter: saturate(180%) blur(20px);
+		width: 100%;
+		height: 100vh;
+		text-align: center;
+		transition: var(--transition);
+		box-shadow: var(--shadow);
+		padding: 5rem 2rem;
+		z-index: 999;
+		overflow-y: auto;
+	}
+
+	body.dark-mode .nav-menu {
+		background: rgba(29, 29, 31, 0.98);
+		backdrop-filter: saturate(180%) blur(20px);
+	}
+
+	.nav-menu.active {
+		left: 0;
+	}
+
+	.nav-close {
+		display: flex;
+		font-size: 1.5rem;
+		width: 40px;
+		height: 40px;
+		top: 1.25rem;
+		right: 1.5rem;
+	}
+
+	.nav-link {
+		font-size: 1.25rem;
+		font-weight: 500;
+	}
+
+	.nav-toggle {
+		display: flex;
+	}
+
+	.dark-mode-toggle {
+		width: 40px;
+		height: 40px;
+	}
+
+	.hero-photo {
+		width: 120px;
+		height: 120px;
+		border-width: 4px;
+	}
+
+	.hero-image {
+		margin-bottom: 1.25rem;
+	}
+
+	.hero-greeting {
+		font-size: 0.9375rem;
+	}
+
+	.hero-title {
+		font-size: 2.25rem;
+	}
+
+	.hero-subtitle {
+		font-size: 1.25rem;
+	}
+
+	.hero-description {
+		font-size: 1rem;
+	}
+
+	.hero-buttons {
+		gap: 0.625rem;
+	}
+
+	.hero-buttons .btn {
+		padding: 0.625rem 1.25rem;
+		font-size: 0.9375rem;
+		flex: 0 1 auto;
+		min-width: 130px;
+		max-width: none;
+	}
+
+	.about-content {
+		grid-template-columns: 1fr;
+		text-align: center;
+	}
+
+	.profile-photo {
+		width: 220px;
+		height: 220px;
+		margin: 0 auto;
+		display: block;
+	}
+
+	.image-placeholder {
+		margin: 0 auto;
+	}
+
+	.about-stats {
+		grid-template-columns: 1fr;
+	}
+
+	.achievements-grid {
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 1.25rem;
+	}
+
+	.achievement-overlay h3 {
+		font-size: 1.125rem;
+	}
+
+	.achievement-overlay p {
+		font-size: 0.875rem;
+	}
+
+	.resume-card {
+		padding: 2rem 1.5rem;
+	}
+
+	.resume-buttons {
+		gap: 0.75rem;
+	}
+
+	.resume-buttons .btn {
+		padding: 0.6875rem 1.375rem;
+		font-size: 1rem;
+		flex: 0 1 auto;
+		min-width: 130px;
+		max-width: none;
+	}
+
+	.projects-scroll {
+		padding-left: 2rem;
+		padding-right: 2rem;
+		gap: 1rem;
+		scroll-padding-left: 2rem;
+	}
+
+	.project-card-link {
+		flex: 0 0 300px;
+		width: 300px;
+	}
+
+	.projects-nav {
+		display: none;
+	}
+
+	.projects-nav-mobile {
+		display: flex;
+	}
+
+	.project-image {
+		height: 200px;
+	}
+
+	.project-info {
+		padding: 1.5rem;
+	}
+
+	.project-info h3 {
+		font-size: 1.25rem;
+	}
+
+	.project-description {
+		font-size: 0.875rem;
+	}
+
+	.detail-item {
+		font-size: 0.8125rem;
+	}
+
+	.detail-item strong {
+		min-width: 90px;
+	}
+
+	.contact-content {
+		grid-template-columns: 1fr;
+	}
+
+	.contact-form {
+		order: 1;
+	}
+
+	.contact-info {
+		order: 2;
+	}
+
+	.timeline::before {
+		left: 28px;
+		width: 2px;
+	}
+
+	.timeline-item {
+		grid-template-columns: auto 1fr;
+		gap: 1.5rem;
+		margin-bottom: 2.5rem;
+	}
+
+	.timeline-item:nth-child(odd) .timeline-content,
+	.timeline-item:nth-child(even) .timeline-content {
+		grid-column: 2;
+		text-align: left;
+	}
+
+	.timeline-icon {
+		grid-column: 1;
+		grid-row: 1;
+		width: 44px;
+		height: 44px;
+		font-size: 1rem;
+	}
+
+	.timeline-content {
+		padding: 1.5rem;
+	}
+
+	.timeline-content h3 {
+		font-size: 1.125rem;
+	}
+
+	.timeline-content h4 {
+		font-size: 0.9375rem;
+	}
+
+	.timeline-date {
+		font-size: 0.8125rem;
+	}
+
+	.footer-content {
+		flex-direction: column;
+		gap: 1rem;
+		text-align: center;
+	}
+}
+
+/* Medium Mobile Devices */
+@media (max-width: 768px) {
+	.hero-buttons .btn {
+		padding: 0.625rem 1.125rem;
+		font-size: 0.9375rem;
+		min-width: 125px;
+	}
+
+	.resume-buttons .btn {
+		padding: 0.625rem 1.125rem;
+		font-size: 0.9375rem;
+		min-width: 115px;
+	}
+}
+
+@media (max-width: 640px) {
+	.container {
+		padding: 0 1rem;
+	}
+
+	.projects-scroll {
+		padding-left: 1rem;
+		padding-right: 1rem;
+		gap: 1rem;
+		scroll-padding-left: 1rem;
+	}
+
+	.projects-nav-mobile {
+		padding: 1rem 1rem 0 1rem;
+		gap: 0.625rem;
+	}
+
+	.projects-nav-mobile-btn {
+		width: 36px;
+		height: 36px;
+		font-size: 0.875rem;
+		min-width: 36px;
+		min-height: 36px;
+	}
+
+	.project-card-link {
+		flex: 0 0 280px;
+		width: 280px;
+	}
+
+	.project-image {
+		height: 170px;
+	}
+
+	.project-link {
+		width: 48px;
+		height: 48px;
+		font-size: 1.125rem;
+	}
+
+	.project-info {
+		padding: 1.25rem;
+	}
+
+	.project-info h3 {
+		font-size: 1.125rem;
+		margin-bottom: 0.875rem;
+	}
+
+	.project-description {
+		font-size: 0.8125rem;
+		line-height: 1.6;
+		margin-bottom: 1rem;
+	}
+
+	.detail-item {
+		font-size: 0.75rem;
+		line-height: 1.5;
+	}
+
+	.detail-item strong {
+		min-width: 80px;
+		font-size: 0.75rem;
+	}
+
+	.project-tags {
+		gap: 0.375rem;
+	}
+
+	.project-tags span {
+		padding: 0.3125rem 0.75rem;
+		font-size: 0.75rem;
+	}
+
+	.timeline::before {
+		left: 20px;
+	}
+
+	.timeline-item {
+		gap: 1.25rem;
+		margin-bottom: 2rem;
+	}
+
+	.timeline-icon {
+		width: 40px;
+		height: 40px;
+		font-size: 1rem;
+	}
+
+	.timeline-content {
+		padding: 1.5rem;
+	}
+
+	.timeline-content h3 {
+		font-size: 1.125rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.timeline-content h4 {
+		font-size: 0.9375rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.timeline-date {
+		font-size: 0.8125rem;
+		margin-bottom: 1rem;
+	}
+
+	.timeline-content p:last-child {
+		font-size: 0.875rem;
+		line-height: 1.65;
+	}
+
+	.hero-photo {
+		width: 100px;
+		height: 100px;
+		border-width: 3px;
+	}
+
+	.profile-photo {
+		width: 200px;
+		height: 200px;
+	}
+
+	.hero-image {
+		margin-bottom: 1.25rem;
+	}
+
+	.hero-greeting {
+		font-size: 0.9375rem;
+	}
+
+	.hero-title {
+		font-size: 2rem;
+	}
+
+	.hero-subtitle {
+		font-size: 1.25rem;
+	}
+
+	.hero-description {
+		font-size: 1rem;
+		padding: 0 0.5rem;
+	}
+
+	.hero-buttons {
+		gap: 0.625rem;
+	}
+
+	.hero-buttons .btn {
+		padding: 0.625rem 1.125rem;
+		font-size: 0.9375rem;
+		min-width: 130px;
+	}
+
+	.resume-buttons {
+		gap: 0.625rem;
+	}
+
+	.resume-buttons .btn {
+		padding: 0.625rem 1.125rem;
+		font-size: 0.9375rem;
+		min-width: 120px;
+	}
+
+	.section-title {
+		font-size: 1.75rem;
+	}
+
+	.achievements-grid {
+		grid-template-columns: 1fr;
+		gap: 1rem;
+	}
+
+	.achievement-overlay {
+		opacity: 1;
+		background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.5) 60%, transparent 100%);
+		padding: 1rem;
+	}
+
+	.achievement-overlay h3 {
+		font-size: 1.125rem;
+	}
+
+	.achievement-overlay p {
+		font-size: 0.875rem;
+	}
+
+	.skills-grid {
+		grid-template-columns: 1fr;
+	}
+
+	/* Modal responsive styles */
+	.modal-close {
+		top: 1rem;
+		right: 1rem;
+		width: 40px;
+		height: 40px;
+	}
+
+	.modal-close i {
+		font-size: 1.125rem;
+	}
+
+	.modal-nav {
+		width: 40px;
+		height: 40px;
+	}
+
+	.modal-prev {
+		left: 1rem;
+	}
+
+	.modal-next {
+		right: 1rem;
+	}
+
+	.modal-nav i {
+		font-size: 1.25rem;
+	}
+
+	.modal-content {
+		padding: 1rem;
+		gap: 1rem;
+	}
+
+	.modal-image {
+		max-height: calc(90vh - 6rem);
+		border-radius: 8px;
+	}
+
+	.modal-info h3 {
+		font-size: 1.25rem;
+	}
+
+	.modal-info p {
+		font-size: 0.9375rem;
+	}
+}
+
+/* Large Desktop Screens - Expand Experience section */
+@media (min-width: 1401px) {
+	.timeline {
+		max-width: 2000px;
+	}
+
+	.timeline-item {
+		gap: 1rem;
+	}
+
+	.timeline-content {
+		padding: 2rem;
+	}
+}
+
+/* Ultra-Wide Screens - Maximum expansion */
+@media (min-width: 1601px) {
+	.timeline {
+		max-width: 2000px;
+	}
+
+	.timeline-item {
+		gap: 1rem;
+	}
+
+	.timeline-content {
+		padding: 2.25rem;
+	}
+
+	.timeline-content h3 {
+		font-size: 1.375rem;
+	}
+}
+
+/* Extra Small Mobile Devices (iPhone SE, etc.) */
+@media (max-width: 375px) {
+	.hero-buttons {
+		gap: 0.5rem;
+	}
+
+	.hero-buttons .btn {
+		padding: 0.625rem 1rem;
+		font-size: 0.875rem;
+		min-width: 120px;
+	}
+
+	.resume-buttons {
+		gap: 0.5rem;
+	}
+
+	.resume-buttons .btn {
+		padding: 0.625rem 1rem;
+		font-size: 0.875rem;
+		min-width: 110px;
+	}
+
+	/* Modal extra small mobile styles */
+	.modal-content {
+		padding: 0.75rem;
+	}
+
+	.modal-image {
+		border-radius: 6px;
+	}
+
+	.modal-info h3 {
+		font-size: 1.125rem;
+	}
+
+	.modal-info p {
+		font-size: 0.875rem;
+	}
+}

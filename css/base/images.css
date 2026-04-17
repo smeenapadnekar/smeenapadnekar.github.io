@@ -1,0 +1,58 @@
+/**
+ * Image Optimization & Loading Styles
+ * Optimized for fast loading and smooth rendering
+ */
+
+/* Base Image Styles */
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: crisp-edges;
+}
+
+/* Lazy Loading Optimization */
+img[loading="lazy"] {
+	content-visibility: auto;
+}
+
+/* Image Placeholder */
+img:not([src]) {
+	visibility: hidden;
+}
+
+/* Apple-Style Shimmer Effect for Loading Images */
+.achievement-item::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(
+		90deg,
+		transparent 0%,
+		rgba(255, 255, 255, 0.3) 50%,
+		transparent 100%
+	);
+	background-size: 200% 100%;
+	animation: shimmer 2s infinite;
+	opacity: 0;
+	pointer-events: none;
+	z-index: 1;
+	transition: opacity 0.3s;
+}
+
+.achievement-item:not(:has(img.loaded))::before {
+	opacity: 1;
+}
+
+body.dark-mode .achievement-item::before {
+	background: linear-gradient(
+		90deg,
+		transparent 0%,
+		rgba(255, 255, 255, 0.1) 50%,
+		transparent 100%
+	);
+}
