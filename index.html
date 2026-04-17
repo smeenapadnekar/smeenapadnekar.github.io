@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="David Khang - Software Engineer" />
+		<meta name="author" content="David Khang" />
+		<title>David Khang</title>
+		
+		<!-- Favicon - Website Icon -->
+		<!-- <link rel="icon" type="image/jpeg" href="image/avatar/prof-link-photo.jpg" />
+		<link rel="apple-touch-icon" href="image/avatar/prof-link-photo.jpg" />
+		<link rel="shortcut icon" type="image/jpeg" href="image/avatar/prof-link-photo.jpg" /> -->
+
+		<!-- Favicon - modify with sizing -->
+		<link rel="icon" type="image/png" sizes="32x32" href="image/avatar/favicon/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="image/avatar/favicon/favicon-16x16.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="image/avatar/favicon/apple-touch-icon.png" />
+		
+	<!-- Preload critical CSS -->
+	<link rel="preload" href="css/main.css" as="style" />
+	<link rel="stylesheet" href="css/main.css" />
+			<!-- Preconnect to external resources -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+		
+		<!-- Preload critical above-the-fold image -->
+		<link rel="preload" href="image/avatar/casual-photo.JPEG" as="image" />
+		
+		<!-- Load fonts asynchronously -->
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+		<noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" /></noscript>
+		
+		<!-- Load Font Awesome asynchronously -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'" />
+		<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /></noscript>
+	</head>
+	<body>
+		<!-- Navigation -->
+		<nav class="navbar">
+			<div class="container">
+				<div class="nav-brand">
+					<a href="#home">David Khang</a>
+				</div>
+				<button class="nav-toggle" id="navToggle">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<ul class="nav-menu" id="navMenu">
+					<button class="nav-close" id="navClose" aria-label="Close menu">
+						<i class="fas fa-times"></i>
+					</button>
+					<li><a href="#home" class="nav-link">Home</a></li>
+					<li><a href="#about" class="nav-link">About</a></li>
+					<li><a href="#skills" class="nav-link">Skills</a></li>
+					<li><a href="#achievements" class="nav-link">Achievements</a></li>
+					<!-- Temp: Remove Project section -->
+					<li><a href="#projects" class="nav-link">Projects</a></li>
+					<li>
+						<a href="#experience" class="nav-link">Experience</a>
+					</li>
+					<li><a href="#resume" class="nav-link">Resume</a></li>
+					<li><a href="#contact" class="nav-link">Contact</a></li>
+					<li>
+						<button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+							<i class="fas fa-moon"></i>
+						</button>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- Hero Section -->
+		<section id="home" class="hero">
+			<div class="container">
+				<div class="hero-content">
+					<div class="hero-image">
+						<img src="image/avatar/DIT-crop.jpg" alt="David Khang" class="hero-photo" fetchpriority="high" />
+					</div>
+					<p class="hero-greeting">Hi, I'm David</p>
+					<h1 class="hero-title">David Khang</h1>
+					<h2 class="hero-subtitle">Software Engineer</h2>
+					<p class="hero-description">
+						Passionate about applying technology to solve complex problems and drive innovation. Experienced in full-stack development, data science, and cloud solutions.
+					</p>
+					<div class="hero-buttons">
+						<a href="#about" class="btn btn-primary">Check Out My Work</a>
+						<a href="David Khang Resume v2.pdf" download class="btn btn-secondary"> View My Resume</a>
+					</div>
+					<div class="social-links">
+						<a href="tel:0401689100" aria-label="Phone">
+							<i class="fas fa-phone"></i>
+						</a>
+						<a href="mailto:davidkhang.au@gmail.com" aria-label="Email">
+							<i class="fas fa-envelope"></i>
+						</a>
+						<a href="https://www.linkedin.com/in/davidkhang/" target="_blank" aria-label="LinkedIn">
+							<i class="fab fa-linkedin"></i>
+						</a>
+						<a href="https://github.com/khang2107" target="_blank" aria-label="GitHub">
+							<i class="fab fa-github"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="scroll-indicator">
+				<a href="#about">
+					<span></span>
+				</a>
+			</div>
+		</section>
+
+		<!-- About Section -->
+		<section id="about" class="about">
+			<div class="container">
+				<div class="section-header">
+					<h2 class="section-title">About Me</h2>
+					<!-- <p class="section-subtitle">Get to know me better</p> -->
+				</div>
+				<div class="about-content">
+					<div class="about-image">
+						<img src="image/avatar/prof-lift-photo.jpg" alt="David Khang" class="profile-photo" decoding="auto" />
+					</div>
+					<div class="about-text">
+						<p>
+							Hello! I'm David Khang, a Software Engineer based in Adelaide, South Australia. I'm passionate about building scalable solutions and transforming data into actionable
+							insights. Currently working at Department for Infrastructure and Transport, I combine strong technical skills with a problem-solving mindset.
+						</p>
+						<p>
+							With experience in full-stack development, data engineering and cloud technologies, I've worked on several projects from building responsive web applications to
+							implementing comprehensive data warehousing solutions. My expertise includes Python, Java, SQL, JavaScript, AWS, Figma and modern software engineering tools.
+						</p>
+						<p>
+							When I'm not coding, I enjoy exploring new technologies, working on personal projects, and contributing to the tech community. I'm always eager to learn and take on new
+							challenges that push my boundaries.
+						</p>
+						<div class="about-stats">
+							<div class="stat">
+								<h3>5</h3>
+								<p>Years Experience</p>
+							</div>
+							<div class="stat">
+								<h3>60</h3>
+								<p>Projects Completed</p>
+							</div>
+							<div class="stat">
+								<h3>20</h3>
+								<p>Tech Stacks</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Skills Section -->
+		<section id="skills" class="skills">
+			<div class="container">
+				<div class="section-header">
+					<h2 class="section-title">Skills & Technologies</h2>
+					<p class="section-subtitle">Tools and technologies I work with</p>
+				</div>
+				<div class="skills-grid">
+					<div class="skill-category">
+						<h3>Programming Languages</h3>
+						<div class="skill-items">
+							<div class="skill-item">
+								<i class="fab fa-python"></i>
+								<span>Python</span>
+							</div>
+							<div class="skill-item">
+								<i class="fab fa-java"></i>
+								<span>Java</span>
+							</div>
+							<div class="skill-item">
+								<i class="fab fa-js"></i>
+								<span>JavaScript</span>
+							</div>
+							<div class="skill-item">
+								<i class="fas fa-database"></i>
+								<span>SQL</span>
+							</div>
+							<div class="skill-item">
+								<i class="fab fa-html5"></i>
+								<span>HTML</span>
+							</div>
+							<div class="skill-item">
+								<i class="fab fa-css3-alt"></i>
+								<span>CSS</span>
+							</div>
+							<div class="skill-item">
+								<i class="fas fa-code"></i>
+								<span>C/C++</span>
+							</div>
+							<div class="skill-item">
+								<i class="fas fa-code"></i>
+								<span>Appian</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill-category">
+						<h3>Frameworks & Libraries</h3>
+						<div class="skill-items">
+							<div class="skill-item">
+								<i class="fab fa-react"></i>
+								<span>ReactJS</span>
+							</div>
+							<div class="skill-item">
+								<i class="fab fa-node"></i>
+								<span>Node</span>
+							</div>
+							<div class="skill-item">
+								<i class="fas fa-flask"></i>
+								<span>Flask</span>
+							</div>
+							<div class="skill-item">
+								<i class="fas fa-chart-line"></i>
+								<span>Pandas</span>
+							</div>
+							<div class="skill-item">
+								<i class="fas fa-brain"></i>
+								<span>NumPy</span>
+							</div>
+							<div class="skill-item">
+								<i class="fas fa-chart-bar"></i>
+								<span>Matplotlib</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill-category">
+						<h3>Cloud & Data Tools</h3>
+						<div class="skill-items">
+							<div class="skill-item">
+								<i class="fab fa-aws"></i>
+								<span>AWS</span>
+							</div>
+							<div class="skill-item">
+								<i class="fab fa-git-alt"></i>
+								<span>Git/GitHub</span>
+							</div>
+							<div class="skill-item">
+								<i class="fab fa-docker"></i>
+								<span>Docker</span>
+							</div>
+							<div class="skill-item">
+								<i class="fas fa-server"></i>
+								<span>Power BI</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Achievements Section -->
+		<section id="achievements" class="achievements">
+			<div class="container">
+				<div class="section-header">
+					<h2 class="section-title">Achievements</h2>
+					<p class="section-subtitle">Milestones and memorable moments</p>
+				</div>
+				<div class="achievements-grid">
+					<div class="achievement-item" data-achievement-img="image/achievement/DIT.jpg" data-achievement-title="DIT Excellence" data-achievement-desc="Department for Infrastructure and Transport">
+						<img src="image/achievement/DIT.jpg" alt="Department for Infrastructure and Transport Achievement" decoding="async" loading="eager" />
+						<div class="achievement-overlay">
+							<h3>DIT Excellence</h3>
+							<p>Department for Infrastructure and Transport</p>
+						</div>
+					</div>
+					<div class="achievement-item" data-achievement-img="image/achievement/DIT-Orientation.jpg" data-achievement-title="Orientation 2025" data-achievement-desc="Adelaide University Orientation Day 2025">
+						<img src="image/achievement/DIT-Orientation.jpg" alt="Department for Infrastructure and Transport Achievement" decoding="async" loading="eager" />
+						<div class="achievement-overlay">
+							<h3>Orientation 2025</h3>
+							<p>Adelaide University Orientation Day 2025</p>
+						</div>
+					</div>
+					<div class="achievement-item" data-achievement-img="image/achievement/dit-team.JPG" data-achievement-title="DIT Orientation Team" data-achievement-desc="Adelaide University Orientation Day 2025">
+						<img src="image/achievement/dit-team.JPG" alt="Department for Infrastructure and Transport Achievement" decoding="async" loading="eager" />
+						<div class="achievement-overlay">
+							<h3>DIT Orientation Info Team</h3>
+							<p>Adelaide University Orientation Day 2025</p>
+						</div>
+					</div>
+					<div class="achievement-item" data-achievement-img="image/achievement/DIT-featured.png" data-achievement-title="DIT Newsletter Featured" data-achievement-desc="Featured on the Weekly DIT Newsletter">
+						<img src="image/achievement/DIT-featured.png" alt="Department for Infrastructure and Transport Achievement" decoding="async" loading="eager" />
+						<div class="achievement-overlay">
+							<h3>DIT Newsletter Featured</h3>
+							<p>Featured on the Weekly DIT Newsletter</p>
+						</div>
+					</div>
+					<div class="achievement-item" data-achievement-img="image/achievement/ICPC.jpg" data-achievement-title="ICPC Competition 2020" data-achievement-desc="International Collegiate Programming Contest">
+						<img src="image/achievement/ICPC.jpg" alt="ICPC Programming Competition" decoding="async" loading="eager" />
+						<div class="achievement-overlay">
+							<h3>ICPC Competition</h3>
+							<p>International Collegiate Programming Contest</p>
+						</div>
+					</div>
+					<div class="achievement-item" data-achievement-img="image/achievement/accenture-internship.png" data-achievement-title="Accenture Internship" data-achievement-desc="Full-Stack Software Engineer Internship at Accenture">
+						<img src="image/achievement/accenture-internship.png" alt="Accenture Internship" decoding="async" loading="eager" />
+						<div class="achievement-overlay">
+							<h3>Accenture Internship</h3>
+							<p>Full-Stack Software Engineer Internship at Accenture</p>
+						</div>
+					</div>
+					<div class="achievement-item" data-achievement-img="image/achievement/pwc-internship-2.jpeg" data-achievement-title="PwC Internship" data-achievement-desc="Technology Risks & Controls Assurance">
+						<img src="image/achievement/pwc-internship-2.jpeg" alt="PwC Internship" decoding="async" loading="eager" />
+						<div class="achievement-overlay">
+							<h3>PwC Internship</h3>
+							<p>Technology Risks & Controls Assurance</p>
+						</div>
+					</div>
+					<div class="achievement-item" data-achievement-img="image/achievement/pwc-internship.jpeg" data-achievement-title="PwC Intern Team" data-achievement-desc="Our PwC Internship Friend Group going on a trip">
+						<img src="image/achievement/pwc-internship.jpeg" alt="PwC Intern Team" decoding="async" loading="eager" />
+						<div class="achievement-overlay">
+							<h3>PwC Intern Team</h3>
+							<p>Our PwC Intern Team trip</p>
+						</div>
+					</div>
+					<div class="achievement-item" data-achievement-img="image/achievement/space-hackathon.JPG" data-achievement-title="Space & Innovation Hackathon Winner 2020" data-achievement-desc="The winners of the Space & Innovation Hackathon 2020">
+						<img src="image/achievement/space-hackathon.JPG" alt="Space Hackathon Winner" decoding="async" loading="eager" />
+						<div class="achievement-overlay">
+							<h3>Space Hackathon Winner 2020</h3>
+							<p>The winners of the Space & Innovation Hackathon 2020</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Projects Section -->
+		<!-- 
+		Temp: Remove Projects section
+		-->
+		<section id="projects" class="projects">
+			<div class="container">
+				<div class="section-header">
+					<h2 class="section-title">Featured Projects</h2>
+					<p class="section-subtitle">Swipe to explore my recent work</p>
+				</div>
+			</div>
+			<div class="projects-wrapper">
+				<div class="projects-nav">
+					<button class="projects-nav-btn projects-nav-prev" aria-label="Previous project">
+						<i class="fas fa-chevron-left"></i>
+					</button>
+					<button class="projects-nav-btn projects-nav-next" aria-label="Next project">
+						<i class="fas fa-chevron-right"></i>
+					</button>
+				</div>
+				<div class="projects-scroll" id="projectsScroll">
+					<a href="https://github.com/khang2107/Carbon-Emission-Calculator-public" target="_blank" class="project-card-link">
+						<div class="project-card">
+							<div class="project-image" style="background-image: url('image/project/carbon-emission-calculator.jpg')">
+								<!-- <div class="project-overlay">
+									<div class="project-links">
+										<span class="project-link">
+											<i class="fab fa-github"></i>
+										</span>
+									</div>
+								</div> -->
+							</div>
+							<div class="project-info">
+								<h3>Carbon Emission Calculator</h3>
+								<p class="project-description">
+									A comprehensive web application helping organisations make informed decisions about their infrastructure by comparing carbon emissions between on-premises servers
+									and AWS cloud solutions.
+								</p>
+								<div class="project-details">
+									<div class="detail-item"><strong>Backend:</strong> Python, AWS Lambda, API Gateway</div>
+									<div class="detail-item"><strong>Frontend:</strong> HTML5, CSS3, Vanilla JavaScript</div>
+									<div class="detail-item"><strong>Infrastructure:</strong> AWS SAM (Serverless Application Model)</div>
+								</div>
+								<div class="project-tags">
+									<span>AWS</span>
+									<span>Lambda</span>
+									<span>CloudFormation</span>
+									<span>API Gateway</span>
+									<span>SAM (Serverless)</span>
+									<span>Python</span>
+									<span>HTML</span>
+									<span>CSS</span>
+									<span>JavaScript</span>
+									<span>REST API</span>
+									<span>Unit Testing</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="https://github.com/khang2107/Countdown-Timer-public" target="_blank" class="project-card-link">
+						<div class="project-card">
+							<div class="project-image" style="background-image: url('image/project/countdown-timer.jpg')">
+								<!-- <div class="project-overlay">
+									<div class="project-links">
+										<span class="project-link">
+											<i class="fab fa-github"></i>
+										</span>
+									</div>
+								</div> -->
+							</div>
+							<div class="project-info">
+								<h3>Countdown Timer</h3>
+								<p class="project-description">
+									A terminal-based productivity application built with Python 3 featuring object-oriented design, multi-threaded input handling, and CSV-based data persistence for
+									seamless timer management.
+								</p>
+								<div class="project-details">
+									<div class="detail-item"><strong>Core:</strong> Python 3, OOP Design Patterns</div>
+									<div class="detail-item"><strong>Features:</strong> Multi-threading, Real-time State Management</div>
+									<div class="detail-item"><strong>Storage:</strong> CSV-based Data Persistence</div>
+								</div>
+								<div class="project-tags">
+									<span>Python</span>
+									<span>Terminal</span>
+									<span>CSV</span>
+									<span>Time</span>
+									<span>Datetime</span>
+									<span>Threading</span>
+									<span>Unit Testing</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="https://github.com/khang2107/Tic-Tac-Toe-public" target="_blank" class="project-card-link">
+						<div class="project-card">
+							<div class="project-image" style="background-image: url('image/project/game-collection.jpg')">
+								<!-- <div class="project-overlay">
+									<div class="project-links">
+										<span class="project-link">
+											<i class="fab fa-github"></i>
+										</span>
+									</div>
+								</div> -->
+							</div>
+							<div class="project-info">
+								<h3>Let's Play Some Games</h3>
+								<p class="project-description">
+									Console-based gaming suite featuring Tic-Tac-Toe with intelligent AI opponent and Dice Poker with comprehensive statistical tracking. Built using advanced Python
+									concepts and modular architecture.
+								</p>
+								<div class="project-details">
+									<div class="detail-item"><strong>Games:</strong> Tic-Tac-Toe (AI), Dice Poker</div>
+									<div class="detail-item"><strong>Architecture:</strong> Abstract Classes, Inheritance, Modular Design</div>
+									<div class="detail-item"><strong>Tech:</strong> Python Standard Libraries, Statistical Analysis</div>
+								</div>
+								<div class="project-tags">
+									<span>Python</span>
+									<span>Terminal</span>
+									<span>Random</span>
+									<span>Math</span>
+									<span>Unit Testing</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="https://github.com/khang2107/AWS-Auto-Scaling-Group" target="_blank" class="project-card-link">
+						<div class="project-card">
+							<div class="project-image" style="background-image: url('image/project/aws-auto-scaling-infrastructure-1.jpg')">
+								<!-- <div class="project-overlay">
+									<div class="project-links">
+										<span class="project-link">
+											<i class="fab fa-github"></i>
+										</span>
+									</div>
+								</div> -->
+							</div>
+							<div class="project-info">
+								<h3>AWS Auto-Scaling Infrastructure</h3>
+								<p class="project-description">
+									Enterprise-grade three-tier web application deployed on AWS with Infrastructure as Code (IaC). Features dynamic auto-scaling, high availability across multiple
+									zones, and comprehensive monitoring for optimal performance.
+								</p>
+								<div class="project-details">
+									<div class="detail-item"><strong>IaC:</strong> CloudFormation Templates, VPC Networking</div>
+									<div class="detail-item"><strong>Scaling:</strong> Auto-scaling Groups, CPU-based Policies, Load Balancers</div>
+									<div class="detail-item"><strong>Data:</strong> RDS MySQL, CloudWatch Monitoring</div>
+								</div>
+								<div class="project-tags">
+									<span>AWS</span>
+									<span>CloudFormation</span>
+									<span>Auto Scaling Group</span>
+									<span>RDS MySQL</span>
+									<span>VPC</span>
+									<span>CloudWatch</span>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="projects-nav-mobile">
+					<button class="projects-nav-mobile-btn projects-nav-mobile-prev" aria-label="Previous project">
+						<i class="fas fa-chevron-left"></i>
+					</button>
+					<button class="projects-nav-mobile-btn projects-nav-mobile-next" aria-label="Next project">
+						<i class="fas fa-chevron-right"></i>
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<!-- Experience Section -->
+		<section id="experience" class="experience">
+			<div class="container">
+				<div class="section-header">
+					<h2 class="section-title">Experience</h2>
+					<p class="section-subtitle">My professional journey</p>
+				</div>
+				<div class="timeline">
+					<div class="timeline-item">
+						<div class="timeline-icon">
+							<i class="fas fa-line-chart" aria-hidden="true"></i>
+						</div>
+						<div class="timeline-content">
+							<h3>Data Engineer & Insights Analyst</h3>
+							<h4>Department For Infrastructure and Transport</h4>
+							<!-- <p class="timeline-date">Feb 2023 - Present</p> -->
+							<p>
+								Conducted comprehensive analysis of database operations involving 30+ ICT applications, identifying continuous improvement opportunities and delivering strategic recommendations. 
+								Coordinated end-to-end delivery of serverless deployment project via business process analysis, developing project plans & managing stakeholder expectations. 
+								Prepared quality written reports & status updates for senior managers, documented key performance indicators, issues, recommendations & forecasting outcomes for strategic decision making and project transparency. 
+								Proactively identified and resolved technical issues through systematic analysis, communicated findings to stakeholders, and provided feedback to ensure timely project delivery and operational continuity.
+							</p>
+						</div>
+					</div>
+					<div class="timeline-item">
+						<div class="timeline-icon">
+							<i class="fas fa-briefcase"></i>
+						</div>
+						<div class="timeline-content">
+							<h3>Full-Stack Software Engineer</h3>
+							<h4>Department For Infrastructure and Transport</h4>
+							<!-- <p class="timeline-date">Feb 2023 - Present</p> -->
+							<p>
+								Building enterprise applications using Appian, Java, Python, and .NET with SQL/NoSQL database integration and Power BI analytics. Optimised database performance through
+								advanced SQL techniques, achieving 20% faster data retrieval. Reduced deployment errors by 30% via comprehensive unit and integration testing. Led security access
+								management projects that reduced manual processing time by 50% while implementing AWS cloud infrastructure following Well-Architected best practices.
+							</p>
+						</div>
+					</div>
+					<!--
+					<div class="timeline-item">
+						<div class="timeline-icon">
+							<i class="fas fa-cloud"></i>
+						</div>
+						<div class="timeline-content">
+							<h3>Graduate Cloud Engineer</h3>
+							<h4>Department For Infrastructure and Transport</h4>
+							<p>
+								Designed and implemented scalable AWS cloud architectures using CloudFormation, Auto Scaling Groups, and Lambda functions for serverless deployments. Reduced deployment
+								time by 40% and infrastructure costs by 30% through automated CloudFormation templates. Monitored and maintained cloud infrastructures using Python, PowerShell, and
+								Bash scripting to ensure high availability and optimise system performance across critical enterprise applications.
+							</p>
+						</div>
+					</div>
+					-->
+					<div class="timeline-item">
+						<div class="timeline-icon">
+							<i class="fas fa-check-circle"></i>
+						</div>
+						<div class="timeline-content">
+							<h3>API Automation Test Intern</h3>
+							<h4>Data Action</h4>
+							<!-- <p class="timeline-date">Aug 2021 - Dec 2021</p> -->
+							<p>
+								Developed automated testing frameworks for RESTful API banking systems using Python, Java, TestNG, and AssertJ with Postman integration. Created reusable test script
+								templates that reduced manual testing effort by 40% and improved testing efficiency by 30%. Collaborated with cross-functional teams to identify edge cases and
+								high-volume transaction scenarios, ensuring compliance with banking industry standards and reducing testing errors by 20%.
+							</p>
+						</div>
+					</div>
+					<div class="timeline-item">
+						<div class="timeline-icon">
+							<i class="fas fa-shield-alt"></i>
+						</div>
+						<div class="timeline-content">
+							<h3>Technology Risks & Controls Assurance Intern</h3>
+							<h4>PwC</h4>
+							<!-- <p class="timeline-date">Dec 2020 - Apr 2021</p> -->
+							<p>
+								Conducted ICT risk assessments and developed cybersecurity risk management strategies using AWS, Python, and SQL for external clients. Documented and enhanced security
+								processes and controls to improve design and operating effectiveness by 15% while ensuring compliance with industry security frameworks. Analysed technical processes
+								and system performance metrics using PowerShell and Bash scripting to drive data accuracy and inform management decision-making.
+							</p>
+						</div>
+					</div>
+					<div class="timeline-item">
+						<div class="timeline-icon">
+							<i class="fas fa-code"></i>
+						</div>
+						<div class="timeline-content">
+							<h3>Full-Stack Software Engineer Intern</h3>
+							<h4>Accenture</h4>
+							<!-- <p class="timeline-date">Aug 2020 - Dec 2020</p> -->
+							<p>
+								Designed cloud migration solutions using Python, JavaScript, and AWS services including CloudFormation, S3, and EC2 with HTML5/CSS frontend development. Led
+								cost-benefit analysis algorithm development for SMB cloud migration, comparing financial and environmental impacts using Figma for solution design. Presented technical
+								architecture and implementation strategies to executive stakeholders, demonstrating full-stack development and cloud infrastructure expertise.
+							</p>
+						</div>
+					</div>
+					<div class="timeline-item">
+						<div class="timeline-icon">
+							<i class="fas fa-laptop-code"></i>
+						</div>
+						<div class="timeline-content">
+							<h3>Software Engineer</h3>
+							<h4>Startup Global Dynamic</h4>
+							<!-- <p class="timeline-date">Feb 2020 - Dec 2020</p> -->
+							<p>
+								Built and maintained web applications using React.js and Node.js. Developed comprehensive data warehousing solutions with AWS Cloud Services including Data Factory, AWS
+								SQL Database, and AWS Functions. Implemented ETL pipelines for efficient data processing and management to support business intelligence initiatives.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Resume Section -->
+		<section id="resume" class="resume">
+			<div class="container">
+				<div class="section-header">
+					<h2 class="section-title">Resume</h2>
+					<p class="section-subtitle">Download my professional resume</p>
+				</div>
+				<div class="resume-content">
+					<div class="resume-card">
+						<div class="resume-icon">
+							<i class="fas fa-file-pdf"></i>
+						</div>
+						<h3>Professional Resume</h3>
+						<p>View or download my complete professional resume with detailed information about my experience, skills, education, and achievements.</p>
+						<div class="resume-buttons">
+							<a href="David Khang Resume v2.pdf" download class="btn btn-primary"> <i class="fas fa-download"></i> Download </a>
+							<!-- 
+							Temp: Remove Download Resume Button with white design
+							-->
+							<!-- <a href="David Khang Resume v2.pdf" download class="btn btn-secondary"> <i class="fas fa-download"></i> Download Resume </a> -->
+							<!-- 
+							Temp: Remove View Resume button 
+							-->
+							<a href="David Khang Resume v2.pdf" target="_blank" class="btn btn-secondary"> <i class="fas fa-eye"></i> Preview </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact Section -->
+		<section id="contact" class="contact">
+			<div class="container">
+				<div class="section-header">
+					<h2 class="section-title">Get In Touch</h2>
+					<p class="section-subtitle">Let's work together</p>
+				</div>
+				<div class="contact-content">
+					<form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+						<!-- Replace with your Web3Forms Access Key -->
+						<input type="hidden" name="access_key" value="c9d24592-8f7e-493d-8ca7-44e630ca77a3" />
+						<input type="hidden" name="subject" value="New Contact Form Submission from Portfolio" />
+						<input type="hidden" name="from_name" value="Portfolio Contact Form" />
+
+						<div class="form-group">
+							<input type="text" id="name" name="name" placeholder="Your Name" required />
+						</div>
+						<div class="form-group">
+							<input type="email" id="email" name="email" placeholder="Your Email" required />
+						</div>
+						<div class="form-group">
+							<input type="text" id="subject" name="custom_subject" placeholder="Subject" required />
+						</div>
+						<div class="form-group">
+							<textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary">Send Message</button>
+					</form>
+					<div class="contact-info">
+						<h3>Let's Connect</h3>
+						<p>I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!</p>
+						<div class="contact-items">
+							<div class="contact-item">
+								<i class="fas fa-envelope"></i>
+								<div>
+									<h4>Email</h4>
+									<a href="mailto:davidkhang.au@gmail.com">davidkhang.au@gmail.com</a>
+								</div>
+							</div>
+							<div class="contact-item">
+								<i class="fas fa-phone"></i>
+								<div>
+									<h4>Phone</h4>
+									<a href="tel:0401689100">0401 689 100</a>
+								</div>
+							</div>
+							<div class="contact-item">
+								<i class="fab fa-linkedin-in"></i>
+								<div>
+									<h4>LinkedIn</h4>
+									<a href="https://www.linkedin.com/in/davidkhang/">David Khang</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-content">
+					<p>&copy; 2026 David Khang. All rights reserved.</p>
+					<div class="footer-links">
+						<a href="https://github.com/khang2107" target="_blank">
+							<i class="fab fa-github"></i>
+						</a>
+						<a href="https://www.linkedin.com/in/davidkhang/" target="_blank">
+							<i class="fab fa-linkedin"></i>
+						</a>
+						<a href="mailto:davidkhang.au@gmail.com" target="_blank">
+							<i class="fas fa-envelope"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Achievement Lightbox Modal -->
+		<div id="achievementModal" class="achievement-modal" aria-hidden="true" role="dialog" aria-modal="true">
+			<div class="modal-overlay"></div>
+			<button class="modal-close" aria-label="Close modal">
+				<i class="fas fa-times"></i>
+			</button>
+			<button class="modal-nav modal-prev" aria-label="Previous achievement">
+				<i class="fas fa-chevron-left"></i>
+			</button>
+			<button class="modal-nav modal-next" aria-label="Next achievement">
+				<i class="fas fa-chevron-right"></i>
+			</button>
+			<div class="modal-content">
+				<img id="modalImage" src="" alt="" class="modal-image" />
+				<div class="modal-info">
+					<h3 id="modalTitle"></h3>
+					<p id="modalDesc"></p>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/script.js"></script>
+	</body>
+</html>

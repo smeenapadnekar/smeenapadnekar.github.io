@@ -1,0 +1,15 @@
+.resume-icon(
+    // black
+    background: var(--bg-primary);
+)
+
+
+.timeline-icon(
+    // black
+    background: var(--text-primary);
+)
+
+body.dark-mode .timeline-icon(
+    // blue
+    background: var(--primary-color);
+)
